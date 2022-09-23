@@ -1,0 +1,38 @@
+1.
+print("Hello world")
+
+
+2.
+num1 = input("Enter a number: ")
+num2 = input("Enter second number:")
+op = input("Enter an operator: ")
+if op == "+":
+  add = int(num1)+ int(num2)
+  print("The sum is: ", add)
+elif op =="/":
+  div = int(num1)/int(num2)
+  print("The division is: ", div)
+else:
+  print("Not valid operator")
+  
+
+3.
+base = input("Enter the base: ")
+height = input("Enter the height: ")
+ar_triangle = 1/2*(int(base)*int(height))
+print("The area of triangle is: ", ar_triangle)
+
+
+4.
+x = input("Enter a number: ")
+y = input("Enter second number: ")
+temp = x
+x = y
+y = temp
+
+print("The swapped values are: ", x,"and",y)
+
+
+5.
+import random
+print(random.randint(-1000,1000))
