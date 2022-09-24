@@ -1,0 +1,50 @@
+#1.
+km = input("Enter a value: ")
+miles = 0.62*(float(km))
+print(miles)
+
+
+#2.
+cel = input("Enter the value of degree celsius: ")
+fahrenheit = (float(cel)*1.8) + 32
+print("The value in fahrenheit is: ", fahrenheit)
+
+
+#3.
+import calendar
+yy = int(input("Enter year: "))
+mm = int(input("Enter month: "))
+print(calendar. month(yy,mm))
+
+
+#4.
+import math
+
+a = int(input("Enter a: "))
+b = int(input("Enter b: "))
+c = int(input("Enter c: "))
+d = b*b - 4*a*c
+
+if d>0:
+  r1 = (-b + math.sqrt(d))/ 2*a
+  r2 = (-b - math.sqrt(d))/ 2*a
+  print("Roots are real and unequal ", r1,"and ", r2)
+
+elif d==0:
+  r1 = -b/2*a
+  print("Roots are real and same ", r1)
+
+else:
+  print("No real roots")
+  
+
+#5.
+x = int(input("Enter x: "))
+y = int(input("Enter y: "))
+ 
+print ("Before swapping: ")
+print("Value of x : ", x, " and y : ", y)
+x, y = y, x
+ 
+print ("After swapping: ")
+print("Value of x : ", x, " and y : ", y)
